@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bh.h63jav.quizapp.GameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333639"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/toolbarTitleGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+        <ImageView
+            android:id="@+id/toolBarIconExit"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtQuestionTitle"
+        android:layout_below="@+id/toolBarGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textSize="26sp"
+        android:text="@string/title"/>
+    <TextView
+        android:id="@+id/txtQuestionDesc"
+        android:layout_below="@+id/txtQuestionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="18sp"
+        android:text="@string/description"/>
+
+    <LinearLayout
+        android:layout_below="@+id/txtQuestionDesc"
+        android:id="@+id/groupGameInfo"
+        android:paddingTop="5dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="0"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtCurrentQuestion"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="1/30"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ProgressBar
+                android:id="@+id/progressBarGame"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:max="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/ttlQuestionClue"
+                android:layout_weight="3"
+                android:textSize="20sp"
+                android:text="Clue"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/ttlQuestionAnswer"
+                android:layout_weight="7"
+                android:textSize="20sp"
+                android:text="Answer"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/groupGameInfo"
+        android:layout_above="@+id/btnSubmitAnswers"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/listViewQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSubmitAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_answers_button_text"
+        style="@style/Base.Widget.AppCompat.Button"
+        android:textSize="20sp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+
+
+</RelativeLayout>

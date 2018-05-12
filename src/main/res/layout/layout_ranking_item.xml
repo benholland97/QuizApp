@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/topRankingSpacer"
+            android:layout_width="match_parent"
+            android:layout_height="20sp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#8888"
+            android:layout_below="@id/topRankingSpacer"
+            android:id="@+id/rankingItemBody"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/rankingsTxtItem1"
+                android:layout_weight="4"
+                android:textSize="20sp"
+                android:text="Category"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/rankingsTxtItem2"
+                android:layout_weight="6"
+                android:textSize="20sp"
+                android:text="User"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/rankingItemBody"
+            android:orientation="horizontal"
+            android:id="@+id/btmRankingSpacer"
+            android:layout_width="match_parent"
+            android:layout_height="20sp">
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

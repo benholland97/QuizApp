@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bh.h63jav.quizapp.GameActivity">
+
+
+<LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="2"
+            android:id="@+id/imgQuestionClue"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/question_mark"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/txtQuestionClue"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Clue"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:visibility="visible"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/txtAnswer"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

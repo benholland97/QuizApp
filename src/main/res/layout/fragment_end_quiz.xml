@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bh.h63jav.quizapp.EndQuizFragment"
+    android:background="#96000000">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/groupResults"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/txtResultsCat"
+                android:layout_marginBottom="60dp"
+                android:text="Category"
+                android:textSize="35sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/txtResultsTotal"
+                android:text="Passed : 0/30"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/progressBarResults"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/btnTryAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_results_restart_txt"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:textSize="20sp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="5dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

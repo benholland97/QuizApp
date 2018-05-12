@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signInRoot"
+    android:background="#333639"
+    tools:context="bh.h63jav.quizapp.LoginActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="The List"
+            android:textColor="#f5f5f5"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginDescTxt"
+        android:textColor="#f5f5f5"
+        android:layout_marginBottom="16dp"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:text="@string/login_description"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_above="@+id/loginDescTxt"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_marginRight="6dp"
+        android:id="@+id/btnSignIn"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_sign_in"
+        android:text="SIGN IN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_marginLeft="6dp"
+        android:id="@+id/btnReg"
+        android:background="@drawable/btn_register"
+        android:text="REGISTER"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/colorRegBtn"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
